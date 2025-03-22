@@ -1,0 +1,322 @@
+body {
+    font-family: "Plus Jakarta Sans", serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+    margin-top: 5rem;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 576px) {
+    body {
+        overflow-x: hidden !important;
+    }
+    .container {
+        padding-right: 0 !important;
+    }
+    .container-fluid {
+        padding-left: 0 !important;
+    }
+    .index-card {
+        margin-right: 0% !important;
+        padding-right: 0% !important;
+    }
+    .row {
+        width: 100%;
+    }
+    .show-card {
+        all: unset;
+        padding-left: 0.7rem;
+    }
+    .show-title {
+        all: unset;
+        margin: auto;
+        margin-bottom: 0% !important;
+        padding-bottom: 0% !important;
+    }
+    #heading {
+        font-weight: 800;
+    }
+    .show-img {
+        height: 30vh !important;
+        object-fit: fill;
+    }
+    .show-btn {
+        all: unset;
+        gap: 0rem;
+        margin-left: 0% !important;
+        padding-left: 1.1rem;
+    }
+    .show-text {
+        line-height: 1.7rem;
+        margin-bottom: 1.7%;
+    }
+    .descr {
+        line-height: 1.2rem;
+        margin-bottom: 1.7%;
+    }
+    .reviews {
+        margin-left: 1.2%;
+    }
+    .review-container {
+        all: unset;
+        width: 100% !important;
+        margin-left: 1.3rem;
+    }
+    .review-title {
+        text-align: center;
+    }
+    #comment {
+        width: 95% !important;
+    }
+    .starability-result {
+        transform: scale(0.7);
+        transform-origin: left;
+        margin-bottom: 0% !important;
+    }
+    .review-text {
+        margin-bottom: 0% !important;
+    }
+    .rev-del {
+        margin-bottom: 4% !important;
+    }
+    /* edit section */
+    .edit-div {
+        all: unset;
+        width: fit-content;
+        margin: 2%;
+    }
+    .preview-img {
+        object-fit: fill;
+        height: 250px;
+        width: 300px;
+        border: 5px solid white;
+        border-radius: 50%;
+    }
+    .edit-form-content {
+        color: rgb(116, 116, 116);
+    }
+    /* user routes */
+}
+
+.show-text {
+    line-height: 1.7rem;
+    margin-bottom: 1.3%;
+}
+.descr {
+    line-height: 1.2rem;
+    margin-bottom: 1.3%;
+}
+
+.container {
+    flex: 1;
+}
+
+/* h3{
+    text-align: center; 
+}*/
+.center-container {
+    /*  to center the edit button */
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+}
+.add-btn {
+    height: 30px !important;
+    width: 60px !important;
+    color: white !important;
+    background-color: #fe424d !important;
+    border: none !important;
+    border-radius: 5px !important;
+}
+.update-btn {
+    color: white !important;
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+/* navbar */
+.navbar {
+    background-color: rgb(250, 250, 250);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    opacity: 1;
+}
+.navbar-toggler {
+    z-index: 10000;
+}
+.container-fluid {
+    padding: 0.5rem 1rem;
+    margin-left: 1rem; /* Ensures uniform spacing on both sides */
+    padding-right: 1rem;
+}
+
+.fa-compass {
+    color: #fe424d;
+    font-size: 2rem;
+}
+.nav-link {
+    color: #222222 !important ;
+}
+.btn-search {
+    background-color: #fe424d !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 25px !important;
+    padding: 0 1rem 0 1rem !important;
+    font-size: 0.9rem !important;
+}
+.btn-search i {
+    display: inline !important;
+    margin-right: 0.5rem !important;
+}
+.search-input {
+    border-radius: 25px !important;
+    padding: 0.5rem 3rem 0.5rem 3rem !important;
+    font-size: 0.9rem !important;
+}
+
+/* footer */
+.f-info-links,
+.f-info-socials,
+.f-info-brand {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.f-info {
+    text-align: center;
+    height: 6rem;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.f-info-socials i {
+    color: rgb(75, 75, 75);
+    font-size: 1.8rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+.fa-square-facebook:hover {
+    color: #3b5998;
+}
+.fa-square-instagram:hover {
+    background: linear-gradient(135deg, #833ab4, #e1306c, #fd1d1d, #fdcb58);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+.fa-linkedin:hover {
+    color: #0077b5;
+}
+.f-info-links a {
+    color: #222222;
+    text-decoration: none;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+}
+.f-info-links a:hover {
+    text-decoration: underline;
+}
+
+/* Cards */
+.listing-card {
+    border: none !important;
+    margin-bottom: 2rem;
+}
+.card-img-top {
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+.card-body {
+    padding: 0 !important;
+}
+.card-text {
+    padding-left: 0.2rem !important;
+}
+
+.card-text p {
+    font-weight: 400 !important ;
+}
+.listing-link {
+    text-decoration: none;
+}
+
+/* Image Overlay Effect */
+.card-img-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.05rem;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.card:hover .card-img-overlay {
+    opacity: 0.85;
+    border-top-left-radius: 1rem !important;
+    border-top-right-radius: 1rem !important;
+}
+
+/* Text Hover Effect */
+.card-body p {
+    transition: color 0.5s ease-in-out;
+}
+.card:hover .card-text {
+    color: #2c3e50;
+    /* padding-left: 0.3rem !important; */
+}
+
+/* show page */
+.show-img {
+    height: 50vh !important;
+    object-fit: cover !important;
+    border-radius: 1rem;
+    padding-top: 0.5rem;
+}
+.btns {
+    display: flex;
+}
+.edit-btn {
+    margin-right: 1.5rem;
+    color: white !important;
+    background-color: #fe424d !important;
+    border: none !important;
+    border-radius: 5px !important;
+}
+.show-btn {
+    margin-left: 25%;
+}
+
+/* flash messages */
+.alert-success {
+    text-align: center !important;
+}
+
+/* review section */
+.review-box {
+    background-color: #f7f7f7;
+}
+
+/* some adjustments */
+@media (max-width: 576px) {
+    .show-card {
+        width: 100%;
+    }
+}
+@media (min-width: 576px) {
+    .show-card {
+        border-radius: 12px; /* Smooth rounded corners */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+        border: 1px solid #ddd; /* Light border */
+    }
+}
