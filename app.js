@@ -149,7 +149,7 @@ app.get("/dashboard", (req, res) => {
   res.send("dashboard");
 });
 app.get("/unavailable", (req, res, next) => {
-  next(new ExpressError(404, " Coming soon! This feature is under development."));
+  next(new ExpressError(404, " This feature is currently unavailable."));
 });
 
 app.all("*", (req, res, next) => {
