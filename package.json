@@ -7,7 +7,7 @@
     "description": "airbnb clone",
     "main": "index.js",
     "scripts": {
-        "start": "node index.js",
+        "start": "node app.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "Rahul Dolai",
