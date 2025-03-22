@@ -24,6 +24,16 @@ const passport = require("passport");
 const LocalStrategy = require("passport-local");
 const ExpressError = require("./utils/ExpressError.js");
 
+
+// ✅ Add the timeout middleware at the beginning
+app.use((req, res, next) => {
+  res.setTimeout(15000, () => { // 15 seconds timeout
+    console.log("Request timed out.");
+    res.status(504).send("Server timeout");
+  });
+  next();
+});
+
 app.use(express.static(path.join(__dirname, "public")));
 app.use("/favicon.ico", express.static(path.join(__dirname, "public", "favicon.ico")));
 
