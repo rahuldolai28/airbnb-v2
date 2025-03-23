@@ -377,3 +377,10 @@ body, html {
     background: #fe424d !important;
     color: white !important;
 }
+.btn:focus {
+    color: white;
+    background-color: #fe424d;
+    border: 1px solid grey;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+  
